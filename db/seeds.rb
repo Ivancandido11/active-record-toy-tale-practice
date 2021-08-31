@@ -17,10 +17,12 @@ andy = Kid.create(name: "Andy")
 sid = Kid.create(name: "Sid")
 
 puts "Creating purchases..."
-# ***********************************************************
-# * TODO: create purchases! Remember, a role belongs to a toy *
-# * and a role belongs to an kid.                         *
-# ***********************************************************
-# Create Purchases Here
+Purchase.create(toy: woody, kid: andy, quantity: 2)
+Purchase.create(toy: buzz, kid: andy, quantity: 1)
+Purchase.create(toy: bopeep, kid: andy, quantity: 10)
+Purchase.create(toy: woody, kid: sid, quantity: 1)
+Purchase.create(toy: potato, kid: sid, quantity: 6)
+Purchase.create(toy: rex, kid: sid, quantity: 5)
+Purchase.create(toy: slinky, kid: sid, quantity: 7)
 
 puts "Seeding done!"
